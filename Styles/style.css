@@ -1,0 +1,895 @@
+header {
+  position: fixed;
+  z-index: 99;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 50px;
+  background-color: #2c313b;
+  border-bottom: 3px solid black;
+  color: white;
+}
+
+header * {
+  text-align: center;
+}
+
+header #Menu {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+header #Menu div {
+  width: 40px;
+  margin-bottom: 5px;
+  height: 5px;
+  display: block;
+  background-color: #097cc4;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+header #NavContainer {
+  display: none;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  width: calc(-webkit-fit-content + 300px);
+  width: calc(-moz-fit-content + 300px);
+  width: calc(fit-content + 300px);
+  height: calc(100% - 50px);
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+header #NavContainer * {
+  display: block;
+  margin: 20px 50px;
+}
+
+header #Home {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+header #About {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+header #Contact {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+header #Projects {
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: large;
+  padding: 5px 10px;
+}
+
+header a:hover {
+  color: white;
+  border-radius: 10px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation-name: link;
+          animation-name: link;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+header :last-child {
+  color: white;
+  border-bottom: solid 2px #097cc4;
+  border-top: solid 2px #097cc4;
+  border-radius: 10px;
+  cursor: default;
+}
+
+header img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #097cc4;
+  border-bottom: 3px solid black;
+  border-radius: 0 0 10px 10px;
+  padding: 10px 0;
+  height: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .NavLink {
+    display: none;
+  }
+  #Menu {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .NavLink {
+    display: block;
+  }
+  #Menu {
+    display: none;
+  }
+}
+
+@-webkit-keyframes link {
+  0% {
+  }
+  10% {
+    text-shadow: 1px 1px 2px rgba(9, 124, 196, 0.65);
+  }
+  100% {
+    -webkit-transform: translate(-25px, -24px);
+            transform: translate(-25px, -24px);
+    text-shadow: 14px 12px 2px rgba(9, 124, 196, 0.65);
+  }
+}
+
+@keyframes link {
+  0% {
+  }
+  10% {
+    text-shadow: 1px 1px 2px rgba(9, 124, 196, 0.65);
+  }
+  100% {
+    -webkit-transform: translate(-25px, -24px);
+            transform: translate(-25px, -24px);
+    text-shadow: 14px 12px 2px rgba(9, 124, 196, 0.65);
+  }
+}
+
+#ProjectsContainer {
+  background-color: black;
+  color: white;
+  width: 97vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-family: monospace;
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+}
+
+.ProjectItem {
+  display: inline-block;
+  position: relative;
+  width: 400px;
+  height: 200px;
+  max-width: 95%;
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  margin: 10px;
+  background-color: #2c313b;
+  border: 3px solid #097cc4;
+  border-radius: 10px;
+  color: white;
+}
+
+.ProjectItem .TechTokenContainer {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 30px;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.ProjectItem .TechTokenContainer img {
+  display: block;
+  width: 100%;
+  margin: 5px 0px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.ProjectItem .ImageContainer {
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  width: 80%;
+  height: 80%;
+}
+
+.ProjectItem .ImageContainer img {
+  width: 300px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.ProjectItem .ProjectTitle {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.ProjectItem .ProjectLink {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #097cc4;
+  color: white;
+  text-decoration: none;
+}
+
+.ProjectItem a:hover {
+  background-color: white;
+  color: #097cc4;
+}
+
+#ProjectCountContainer {
+  margin: 10px 2.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: white;
+  max-width: 95%;
+  text-align: center;
+}
+
+#ProjectCountContainer * {
+  background-color: #2c313b;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 10px;
+}
+
+#ProjectCountContainer :nth-child(1) {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+#ProjectCountContainer :nth-child(2) {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+#ProjectCountContainer :nth-child(3) {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+#ContactMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 120px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+#ContactMain #EmailFormContainer {
+  text-align: center;
+  font-family: monospace;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  background-color: #2c313b;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+#ContactMain #EmailFormContainer form input {
+  width: 90%;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+#ContactMain #EmailFormContainer form textarea {
+  width: 90%;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: black;
+  border: none;
+  color: white;
+  resize: none;
+}
+
+#ContactMain #EmailFormContainer form button {
+  margin-left: calc(90% - 90px);
+  width: 100px;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  #ContactMain #EmailFormContainer {
+    width: 90%;
+  }
+  #ContactMain #SocialMediaContainer {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  #ContactMain #EmailFormContainer {
+    width: 45%;
+  }
+  #ContactMain #SocialMediaContainer {
+    width: 45%;
+  }
+}
+
+#ContactMain #SocialMediaContainer {
+  background-color: #2c313b;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#ContactMain #SocialMediaContainer p {
+  margin-bottom: 25px;
+}
+
+#ContactMain #SocialMediaContainer img {
+  width: 75%;
+  border-radius: 5px;
+}
+
+#ContactMain #SocialMediaContainer #meImg {
+  border: 3px solid #097cc4;
+  background-color: black;
+  border-radius: 50%;
+  width: 50%;
+  margin-top: 5%;
+}
+
+#ContactMain #SocialMediaContainer #LinkContainer {
+  margin-top: 10%;
+}
+
+#ContactMain #SocialMediaContainer #LinkContainer a {
+  text-decoration: none;
+}
+
+#ContactMain #SocialMediaContainer #LinkContainer a img {
+  width: 70px;
+}
+
+#AboutMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 120px;
+  color: white;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#AboutMain :nth-child(1) {
+  text-align: left;
+  font-family: monospace;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  background-color: #2c313b;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+#AboutMain :nth-child(2) {
+  text-align: left;
+  font-family: monospace;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  background-color: #2c313b;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+#AboutMain :nth-child(2) li {
+  margin: 0;
+  padding: 0;
+  margin-left: 50px;
+  margin-bottom: 5px;
+}
+
+#AboutMain :nth-child(2) a {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  #AboutMain :nth-child(1) {
+    width: 90%;
+  }
+  #AboutMain :nth-child(2) {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  #AboutMain :nth-child(1) {
+    width: 45%;
+  }
+  #AboutMain :nth-child(2) {
+    width: 45%;
+  }
+}
+
+#thankYouNoticeBox {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  background-color: #2c313b;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#emailIMG {
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  width: 45px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation-name: email;
+          animation-name: email;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes email {
+  0% {
+    left: 5%;
+    width: 0px;
+  }
+  10% {
+    left: 5%;
+    width: 45px;
+  }
+  90% {
+    left: 95%;
+    width: 45px;
+  }
+  100% {
+    left: 95%;
+    width: 0px;
+  }
+}
+
+@keyframes email {
+  0% {
+    left: 5%;
+    width: 0px;
+  }
+  10% {
+    left: 5%;
+    width: 45px;
+  }
+  90% {
+    left: 95%;
+    width: 45px;
+  }
+  100% {
+    left: 95%;
+    width: 0px;
+  }
+}
+
+#NotLikeThat {
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+
+.noScroll {
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+main {
+  font-family: monospace;
+  color: white;
+  height: calc(100vh - 50px);
+  width: 100vw;
+  margin-top: 50px;
+}
+
+main #backGround {
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+main #LogoContainer {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  overflow: none;
+}
+
+main #LogoContainer img {
+  width: 200px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+main #LogoContainer #Intro {
+  text-align: center;
+  z-index: 10;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: translate(0%, 50%) rotate(-15deg);
+          transform: translate(0%, 50%) rotate(-15deg);
+  background-color: #2c313b;
+  padding: 1px 100vw;
+}
+
+main #LogoContainer #Intro * {
+  width: 500px;
+  text-align: left;
+}
+
+main #LogoContainer #Intro #Name {
+  background: white;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-shadow: 10px 10px 2px rgba(255, 255, 255, 0.05);
+}
+
+main #LogoContainer #Intro #FrontendDev {
+  background: white;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-shadow: 10px 10px 2px rgba(255, 255, 255, 0.05);
+}
+
+main #FrontEndContainer {
+  display: none;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+}
+
+main #FrontEndContainer * {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  height: 200px;
+  width: 1em;
+  z-index: 1;
+}
+
+main #FrontEndContainer :nth-child(1) {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  color: black;
+}
+
+main #FrontEndContainer :nth-child(2) {
+  -webkit-transform: rotate(-80deg);
+          transform: rotate(-80deg);
+  color: black;
+}
+
+main #FrontEndContainer :nth-child(3) {
+  -webkit-transform: rotate(-70deg);
+          transform: rotate(-70deg);
+  color: black;
+}
+
+main #FrontEndContainer :nth-child(4) {
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+  color: black;
+}
+
+main #FrontEndContainer :nth-child(5) {
+  -webkit-transform: rotate(-50deg);
+          transform: rotate(-50deg);
+  color: black;
+}
+
+main #FrontEndContainer :nth-child(6) {
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+  color: black;
+}
+
+main #FrontEndContainer :nth-child(7) {
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  color: black;
+}
+
+main #FrontEndContainer :nth-child(8) {
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  color: black;
+}
+
+main #FrontEndContainer :nth-child(9) {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  color: black;
+}
+
+main #FrontEndContainer :nth-child(10) {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+main #FrontEndContainer :nth-child(11) {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+main #FrontEndContainer :nth-child(12) {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+main #FrontEndContainer :nth-child(13) {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+main #FrontEndContainer :nth-child(14) {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+main #FrontEndContainer :nth-child(15) {
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+}
+
+main #FrontEndContainer :nth-child(16) {
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+main #FrontEndContainer :nth-child(17) {
+  -webkit-transform: rotate(70deg);
+          transform: rotate(70deg);
+}
+
+main #FrontEndContainer :nth-child(18) {
+  -webkit-transform: rotate(80deg);
+          transform: rotate(80deg);
+}
+
+main #FrontEndContainer :nth-child(19) {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2c313b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #097cc4;
+}
+
+a {
+  color: white;
+  border: none;
+  text-decoration: none;
+}
+
+a:hover {
+  /*
+    text-decoration: underline;
+    color: $decorative-color2;*/
+}
+
+@media screen and (max-height: 400px) {
+  #Intro {
+    font-size: 8px;
+  }
+  #Intro * {
+    margin-left: 130px;
+    width: 100vw;
+    text-align: left;
+  }
+  #Intro #Name {
+    text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.05);
+  }
+  #Intro #FrontendDev {
+    text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.05);
+  }
+  #LogoImg {
+    display: none;
+  }
+}
+
+@media screen and (min-height: 401px) and (max-height: 500px) {
+  #Intro {
+    -webkit-transform: translate(0%, 10%), rotate(-15deg);
+            transform: translate(0%, 10%), rotate(-15deg);
+    font-size: 8px;
+  }
+  #Intro * {
+    margin-left: 100px;
+    width: 100vw;
+    text-align: left;
+  }
+  #Intro #Name {
+    text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.05);
+  }
+  #Intro #FrontendDev {
+    text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.05);
+  }
+}
+
+@media screen and (max-width: 300px) and (min-height: 500px) {
+  #Intro {
+    -webkit-transform: translate(20%, 60%), rotate(-15deg);
+            transform: translate(20%, 60%), rotate(-15deg);
+    font-size: 8px;
+  }
+  #Intro * {
+    margin-left: 100px;
+    width: 100vw;
+    text-align: left;
+  }
+  #Intro #Name {
+    text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.05);
+  }
+  #Intro #FrontendDev {
+    text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.05);
+  }
+}
+
+@media screen and (min-width: 301px) and (max-width: 500px) and (min-height: 500px) {
+  #Intro {
+    -webkit-transform: translate(20%, 60%), rotate(-15deg);
+            transform: translate(20%, 60%), rotate(-15deg);
+    font-size: 10px;
+  }
+  #Intro * {
+    margin-left: 70px;
+    width: 100vw;
+    text-align: left;
+  }
+  #Intro #Name {
+    text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.05);
+  }
+  #Intro #FrontendDev {
+    text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.05);
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1000px) and (min-height: 500px) {
+  #Intro {
+    -webkit-transform: translate(20%, 60%), rotate(-15deg);
+            transform: translate(20%, 60%), rotate(-15deg);
+    font-size: 15px;
+  }
+  #Intro * {
+    margin-left: 10px;
+    width: 100vw;
+    text-align: left;
+  }
+  #Intro #Name {
+    text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.05);
+  }
+  #Intro #FrontendDev {
+    text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.05);
+  }
+}
+/*# sourceMappingURL=style.css.map */

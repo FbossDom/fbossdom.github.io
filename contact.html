@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Pictures/FD logo.png">
+    <link rel="stylesheet" href="Styles/style.css">
+    <title>Contact | Dominik Fábos</title>
+</head>
+<body>
+    <script src="Scripts/script.js"></script>
+    <header>
+        <div id="NavContainer">
+            <a href="index.html">
+                Home
+            </a>
+            <a href="contact.html">
+                Contact
+            </a>
+            <a href="projects.html">
+                Projects
+            </a>
+            <a href="about.html">
+                About
+            </a>
+        </div>
+        <img src="Pictures/FD logo.png" alt="">
+        <div id="Menu" onclick="NavSlideOut()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <a href="index.html" class="NavLink" id="Home">
+            Home
+        </a>
+        <a href="projects.html" id="Projects" class="NavLink">
+            Projects
+        </a>
+        <a href="about.html" id="About" class="NavLink">
+            About
+        </a>
+        <a href="contact.html" id="Contact" class="NavLink">
+            Contact
+        </a>
+    </header>
+    <main id="ContactMain">
+        <div id="EmailFormContainer">
+            <p>Send an email here or to FabosDominikDev@gmail.com</p>
+            <form action="https://formsubmit.co/fabosdominikDev@gmail.com" method="POST">
+
+                <input type="text" id="emailname" name="name" placeholder="Name" required> <br><br>
+
+                <input type="email" id="emailaddress" name="email" placeholder="Your e-Mail Address" required> <br><br>
+                
+                <input type="text" id="emailsubject" name="subject" placeholder="Subject" placeholder="Subject" required> <br><br>
+
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_captcha" value="false">
+                <textarea type="text" id="emailtext" name="emailtext" placeholder="Type your letter here..." rows="15" required></textarea> <br><br>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/V002/thanks.html">
+                <button type="submit">Send</button>
+           </form>
+        </div>
+        <div id="SocialMediaContainer">
+            <p>You can also Contact me on these platforms:</p>
+            <img src="Pictures/grey_+_shirt_3_edited-removebg.png" alt="Picture of me." id="meImg">
+                <div id="LinkContainer">
+                    <a href="https://github.com/FbossDom" target="blank">
+                        <img src="Pictures/GitHub-Mark-64px.png" alt="Git">
+                    </a>
+                    <a href="https://www.linkedin.com/in/dominikfabos/" target="blank">
+                        <img src="Pictures/LI-In-Bug.png" alt="IN">
+                    </a>
+                    <a href="https://twitter.com/fbossdom" target="blank">
+                        <img src="Pictures/Twitter social icons - rounded square - blue.png" alt="TW">
+                    </a>
+                </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>

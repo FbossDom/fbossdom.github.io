@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/converter.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="icon" href="Images/Converter Dominium logo.png">
+    <title>Area | Converter Dominium</title>
+</head>
+<body>
+    <header>
+        <a href="../V002/index.html" id="fdlogo">
+            <img src="../V002/Pictures/FD logo.png" alt="FD logo">
+        </a>
+
+        <img src="Images/Converter Dominium logo long.png" alt="CD logo" id="CDLogo">
+        <div id="navContainer">
+            <a href="length.html" class="navlinks">Length</a>
+            <a href="weight.html" class="navlinks">Weight</a>
+            <a href="volume.html" class="navlinks">Volume</a>
+            <a href="temperature.html" class="navlinks">Temperature</a>
+            <a href="time.html" class="navlinks">Time</a>
+            <a class="navlinks" id="MenuButton" onclick="NavMenuOpen()">Menu</a>
+        </div>
+        <div id="MobileNavigation">
+            <a href="length.html" class="navlinks">Length</a>
+            <a href="weight.html" class="navlinks">Weight</a>
+            <a href="volume.html" class="navlinks">Volume</a>
+            <a href="temperature.html" class="navlinks">Temperature</a>
+            <a href="time.html" class="navlinks">Time</a>
+            <a class="navlinks" onclick="NavMenuClose()">Close</a>
+        </div>
+    </header>
+    <main>
+        <button onclick="resetEverything()">Reset</button><br>
+        <div class="container">
+            Metric
+            <div>
+                <input type="number" onchange="micrometer()" name="" id="micromTxta"><span>μm&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            </div>
+            <div>
+                <input type="number" onchange="milimeter()" name="" id="milimTxta" cols="30" rows="1"><span>mm</span>
+            </div>
+            <div>
+                <input type="number" onchange="centimeter()" name="" id="centimTxta" cols="30" rows="1"><span>cm</span>
+            </div>
+            <div>
+                <input type="number" onchange="decimeter()" name="" id="decimTxta" cols="30" rows="1"><span>dm</span>
+            </div>
+            <div>
+                <input type="number" onchange="meterF()" name="" id="meterTxta" cols="30" rows="1"><span>m</span>
+            </div>
+            <div>
+                <input type="number" onchange="kilometer()" name="" id="kilomTxta" cols="30" rows="1"><span>Km</span>
+            </div>
+        </div>
+        <div class="container">
+            Imperial
+            <div>
+                <input type="number" onchange="inchF()" name="" id="inchTxta" cols="30" rows="1"></textarea><span>in</span>
+
+            </div>
+            <div>
+                <input type="number" onchange="feetF()" name="" id="feetTxta" cols="30" rows="1"></textarea><span>ft</span>
+            </div>
+            <div>
+                <input type="number" onchange="yardF()" name="" id="yardTxta" cols="30" rows="1"></textarea><span>yd</span>
+            </div>
+            <div>
+                <input type="number" onchange="mileF()" name="" id="milesTxta" cols="30" rows="1"></textarea><span>mi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            </div>
+        </div>
+        <div class="container">
+            Astronomical
+            <div>
+                <input type="number" onchange="AstronomicalUnit()" name="" id="astronomicaluTxta" cols="30" rows="1"><span>au</span>
+            </div>
+            <div>
+                <input type="number" onchange="lightyearF()" name="" id="lightyearTxta" cols="30" rows="1"><span>ly</span>
+            </div>
+            <div>
+                <input type="number" onchange="lighdayF()" name="" id="lightdayTxta" cols="30" rows="1"><span>l.d.</span>
+            </div>
+            <div>
+                <input type="number" onchange="lighthourF()" name="" id="lighthourTxta" cols="30" rows="1"><span>l.h.</span>
+            </div>
+            <div>
+                <input type="number" onchange="lightminuteF()" name="" id="lightminuteTxta" cols="30" rows="1"><span>l.min.</span>
+            </div>
+            <div>
+                <input type="number" onchange="lightsecondF()" name="" id="lightsecondTxta" cols="30" rows="1"><span>l.sec.</span>
+            </div>
+            <div>
+                <input type="number" onchange="parsecF()" name="" id="parsecTxta" cols="30" rows="1"><span>ps</span>        
+            </div>
+        </div>
+    </main>
+    <footer>
+        Made by: <a href="">Dominik Fábos</a>
+    </footer>
+    <script src="length converter.js"></script>
+    <script src="navigation.js"></script>
+</body>
+</html>

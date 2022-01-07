@@ -1,0 +1,187 @@
+$green1: rgba(#52B788, 0.95);
+$green2: #D8F3DC;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: lightgray;
+    width: 100%;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+    header{
+        font-family: 'Chakra Petch', sans-serif;
+        margin-bottom: 30px;
+        width: 100%;
+        margin: 0;
+        position: absolute;
+        top:0;
+        left:50%;
+        transform: translate(-50%);
+    }
+        #CDLogo{
+            margin:0;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px 20px;
+            width: fit-content;
+            max-width: 60%;
+            color: black;
+            background: $green1;
+            border-radius: 0 0 10px 10px;
+            border: 3px solid rgba(white, 0.75);
+            border-top: none;
+            
+        }
+        #navContainer{
+            display: flex;
+            justify-content: space-evenly;
+
+            margin-top: 40px;
+            padding: 5px 0;
+            background-color: $green1;
+        }
+            .navlinks{
+                text-decoration: none;
+                color: black;
+                width: 120px;
+                background-color: white;
+                border: 3px solid rgba(white, 0.75);
+                padding: 0 10px;
+            }
+        #fdlogo{
+            width: fit-content;
+            font-size: 10px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border-radius: 10px;
+            border: 3px solid rgba(white, 0.75);
+            background-color: $green1;
+            img{
+                width: 30px;
+                display: inline-block;
+                padding: 5px;
+            }
+        }
+    main{
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 200px;
+    }
+        input{
+            padding: 0 10px;
+            margin: 5px;
+            border: $green1 3px solid;
+            border-left: $green1 2px solid;
+            border-right: $green1 2px solid;
+            background-color: $green2;
+        }
+        button{
+            padding: 0 10px;
+            margin: 5px;
+            border-radius: 3px;
+            border: $green1 3px solid;
+            border-left: $green1 2px solid;
+            border-right: $green1 2px solid;
+            background-color: $green2;
+        }
+        .container{
+            display: inline-block;
+            vertical-align: bottom;
+            margin: 0;
+            height: 300px;
+            padding: 10px;
+            text-align: left;
+            border-left:$green1 3px solid;
+            border-right:$green1 3px solid;
+            div{
+                white-space:nowrap;
+                width: 100%;
+            }
+        }
+    #MobileNavigation{
+        display: none;
+        background-color: rgba(black, 0.8);
+        position: fixed;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        .navlinks{
+            display: block;
+            margin: 20px;
+            margin-left:auto;
+            margin-right: auto;
+        }
+        :nth-child(1){
+            margin-top:100px;
+        }
+        :nth-child(6){
+            margin-top: 40%;
+        }
+    }
+footer{
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    color: white;
+    a{
+        color:white;
+    }
+}
+@media screen and (max-width: 900px) {
+    #navContainer{
+        *{
+            display: none;
+        }
+    }
+    #MenuButton{
+        display: block;
+    }
+}
+@media screen and (min-width: 901px) {
+    #navContainer{
+        *{
+            display: block;
+        }
+    }
+    #MenuButton{
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .container{
+        border-left: none;
+        border-right: none;
+    }
+}
+@media screen and (max-width: 370px) {
+    #fdlogo{
+        display: none;
+    }
+    .container{
+        width: 90%;
+    }
+    input{
+        width: 80%;
+        margin: 5px 0;
+    }
+}
+//Scrollbar settings
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $green2; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: $green1; 
+  }

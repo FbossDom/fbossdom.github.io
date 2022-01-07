@@ -1,0 +1,44 @@
+#thankYouNoticeBox{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: $text-color;
+    background-color: $secondary-color;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+#emailIMG{
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    width: 45px;
+    transform: translate(-50%, -50%);
+    animation-name: email;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes email{
+    0%{
+        left: 5%;
+        width: 0px;
+    }
+    10%{
+        left: 5%;
+        width: 45px;
+    }
+    90%{
+        left: 95%;
+        width: 45px;
+    }
+    100%{
+        left: 95%;
+        width: 0px;
+    }
+}
+#NotLikeThat{
+    border-radius: 10px;
+    margin-top: 50px;
+}

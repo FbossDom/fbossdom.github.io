@@ -1,0 +1,95 @@
+#ContactMain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top:120px;
+    color: $text-color;
+    margin-bottom: 25px;
+#EmailFormContainer{
+    text-align: center;
+    font-family: monospace;
+    order:1;
+    background-color: $secondary-color;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+        form{
+            input{
+                width: 90%;
+                border-radius: 10px;
+                padding: 5px;
+                background-color: $main-color;
+                border: none;
+                color: $text-color;
+            }
+            textarea{
+                width: 90%;
+
+                border-radius: 10px;
+                padding: 5px;
+                background-color: $main-color;
+                border: none;
+                color: $text-color;
+                resize: none;
+            }   
+            button{
+                margin-left: calc(90% - 90px);
+                width: 100px;
+
+                border-radius: 10px;
+                padding: 5px;
+                background-color: $main-color;
+                border: none;
+                color: $text-color;
+            }
+        }
+}
+@media screen and (max-width: 800px){
+    #EmailFormContainer{
+        width: 90%;
+    }
+    #SocialMediaContainer{
+        width: 90%;
+    }
+}
+@media screen and (min-width: 801px){
+    #EmailFormContainer{
+        width: 45%;
+    }
+    #SocialMediaContainer{
+        width: 45%;
+    }
+}
+#SocialMediaContainer{
+    background-color: $secondary-color;
+    padding: 10px;
+    border-radius: 10px;
+    order:2;
+    text-align: center;
+    margin-bottom: 15px;
+    p{
+        margin-bottom: 25px;
+    }
+    img{
+        width: 75%;
+        border-radius: 5px;
+    }
+    #meImg{
+        border: 3px solid $decorative-color2;
+        background-color: $dark-color;
+        border-radius: 50%;
+        width: 50%;
+        margin-top: 5%;
+    }
+    #LinkContainer{
+        margin-top: 10%;
+        a{
+            text-decoration: none;
+            img{
+                width: 70px;
+            }
+        }
+    }
+}
+}
