@@ -20,6 +20,9 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
 }
+.noVerticalScroll{
+    overflow-x: hidden;
+}
 main{
     font-family: monospace;
     color: white;
