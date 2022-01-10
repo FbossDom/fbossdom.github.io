@@ -5,7 +5,7 @@ Built, using HTML5, SCSS and JavaScript. <br>
 //Note that this project is not completeted//
 
 - The Portfolio - /Unfinished/<br>
-This is a very simple landing page with responsive design, two languages(HU / ENG), an email form using https://formsubmit.co/ and some animations. <br>
+This is a very simple web page with responsive design, two languages(HU / ENG), an email form using https://formsubmit.co/ and some animations. <br>
 Nothing too special here, but everything is made by me and at the end im proud of the work i was able to do.
 
 - Converter Dominium - /Unfinished/<br>
