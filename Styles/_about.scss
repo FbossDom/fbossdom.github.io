@@ -6,8 +6,14 @@
     margin-top:120px;
     color: $text-color;
     height: fit-content;
+    p{
+        width: 80%;
+    }
     :nth-child(1){
 
+        p{
+            width: 80%;
+        }
         text-align: left;
         font-family: monospace;
         order:1;
@@ -31,8 +37,14 @@
             margin-left: 50px;
             margin-bottom: 5px;
         }
-        a{
-            margin-left: 10px;
+        div{
+            text-align: center;
+            width: 100%;
+            span{
+                margin: 10px;
+                display: inline-block;
+                width: fit-content;
+            }
         }
     }
 }

@@ -64,101 +64,15 @@ main{
                 color: transparent;
                 background-clip: text;
                 -webkit-background-clip: text;
-                text-shadow: 10px 10px 2px rgba($light-color, 0.05);
             }
             #FrontendDev{
                 background: $light-color;
                 color: transparent;
                 background-clip: text;
                 -webkit-background-clip: text;
-                text-shadow: 10px 10px 2px rgba($light-color, 0.05);
             }
         }
 }
-    #FrontEndContainer{
-        display: none;
-        color:$light-color;
-        font-size: larger;
-        font-weight: bold;
-
-        *{
-        position: absolute;
-        top:20%;
-        left:50%;
-        transform-origin: bottom left;
-        height: 200px;
-        width: 1em;
-        z-index: 1;
-
-        }
-        :nth-child(1){
-            transform: rotate(-90deg);
-            color: $dark-color;
-        }
-        :nth-child(2){
-            transform: rotate(-80deg);
-            color: $dark-color;
-        }
-        :nth-child(3){
-            transform: rotate(-70deg);
-            color: $dark-color;        
-        }
-        :nth-child(4){
-            transform: rotate(-60deg);
-            color: $dark-color;        
-        }
-        :nth-child(5){
-            transform: rotate(-50deg);
-            color: $dark-color;        
-        }
-        :nth-child(6){
-            transform: rotate(-40deg);
-            color: $dark-color;        
-        }
-        :nth-child(7){
-            transform: rotate(-30deg);
-            color: $dark-color;        
-        }
-        :nth-child(8){
-            transform: rotate(-20deg);
-            color: $dark-color;        
-        }
-        :nth-child(9){
-            transform: rotate(-10deg);
-            color: $dark-color;
-        }
-        :nth-child(10){
-            transform: rotate(0);
-        }
-        :nth-child(11){
-            transform: rotate(10deg);
-        }
-        :nth-child(12){
-            transform: rotate(20deg);
-        }
-        :nth-child(13){
-            transform: rotate(30deg);
-        }
-        :nth-child(14){
-            transform: rotate(40deg);
-        }
-        :nth-child(15){
-            transform: rotate(50deg);
-        }
-        :nth-child(16){
-            transform: rotate(60deg);
-        }
-        :nth-child(17){
-            transform: rotate(70deg);
-        }
-        :nth-child(18){
-            transform: rotate(80deg);
-        }
-        :nth-child(19){
-            transform: rotate(90deg);
-        }
-
-    }
 }
 //Scrollbar settings
 ::-webkit-scrollbar {

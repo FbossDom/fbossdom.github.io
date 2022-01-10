@@ -469,6 +469,10 @@ header img {
   height: fit-content;
 }
 
+#AboutMain p {
+  width: 80%;
+}
+
 #AboutMain :nth-child(1) {
   text-align: left;
   font-family: monospace;
@@ -479,6 +483,10 @@ header img {
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 15px;
+}
+
+#AboutMain :nth-child(1) p {
+  width: 80%;
 }
 
 #AboutMain :nth-child(2) {
@@ -500,8 +508,17 @@ header img {
   margin-bottom: 5px;
 }
 
-#AboutMain :nth-child(2) a {
-  margin-left: 10px;
+#AboutMain :nth-child(2) div {
+  text-align: center;
+  width: 100%;
+}
+
+#AboutMain :nth-child(2) div span {
+  margin: 10px;
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 @media screen and (max-width: 800px) {
@@ -667,7 +684,6 @@ main #LogoContainer #Intro #Name {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  text-shadow: 10px 10px 2px rgba(255, 255, 255, 0.05);
 }
 
 main #LogoContainer #Intro #FrontendDev {
@@ -675,129 +691,6 @@ main #LogoContainer #Intro #FrontendDev {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  text-shadow: 10px 10px 2px rgba(255, 255, 255, 0.05);
-}
-
-main #FrontEndContainer {
-  display: none;
-  color: white;
-  font-size: larger;
-  font-weight: bold;
-}
-
-main #FrontEndContainer * {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  height: 200px;
-  width: 1em;
-  z-index: 1;
-}
-
-main #FrontEndContainer :nth-child(1) {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  color: black;
-}
-
-main #FrontEndContainer :nth-child(2) {
-  -webkit-transform: rotate(-80deg);
-          transform: rotate(-80deg);
-  color: black;
-}
-
-main #FrontEndContainer :nth-child(3) {
-  -webkit-transform: rotate(-70deg);
-          transform: rotate(-70deg);
-  color: black;
-}
-
-main #FrontEndContainer :nth-child(4) {
-  -webkit-transform: rotate(-60deg);
-          transform: rotate(-60deg);
-  color: black;
-}
-
-main #FrontEndContainer :nth-child(5) {
-  -webkit-transform: rotate(-50deg);
-          transform: rotate(-50deg);
-  color: black;
-}
-
-main #FrontEndContainer :nth-child(6) {
-  -webkit-transform: rotate(-40deg);
-          transform: rotate(-40deg);
-  color: black;
-}
-
-main #FrontEndContainer :nth-child(7) {
-  -webkit-transform: rotate(-30deg);
-          transform: rotate(-30deg);
-  color: black;
-}
-
-main #FrontEndContainer :nth-child(8) {
-  -webkit-transform: rotate(-20deg);
-          transform: rotate(-20deg);
-  color: black;
-}
-
-main #FrontEndContainer :nth-child(9) {
-  -webkit-transform: rotate(-10deg);
-          transform: rotate(-10deg);
-  color: black;
-}
-
-main #FrontEndContainer :nth-child(10) {
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
-}
-
-main #FrontEndContainer :nth-child(11) {
-  -webkit-transform: rotate(10deg);
-          transform: rotate(10deg);
-}
-
-main #FrontEndContainer :nth-child(12) {
-  -webkit-transform: rotate(20deg);
-          transform: rotate(20deg);
-}
-
-main #FrontEndContainer :nth-child(13) {
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
-}
-
-main #FrontEndContainer :nth-child(14) {
-  -webkit-transform: rotate(40deg);
-          transform: rotate(40deg);
-}
-
-main #FrontEndContainer :nth-child(15) {
-  -webkit-transform: rotate(50deg);
-          transform: rotate(50deg);
-}
-
-main #FrontEndContainer :nth-child(16) {
-  -webkit-transform: rotate(60deg);
-          transform: rotate(60deg);
-}
-
-main #FrontEndContainer :nth-child(17) {
-  -webkit-transform: rotate(70deg);
-          transform: rotate(70deg);
-}
-
-main #FrontEndContainer :nth-child(18) {
-  -webkit-transform: rotate(80deg);
-          transform: rotate(80deg);
-}
-
-main #FrontEndContainer :nth-child(19) {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
 }
 
 ::-webkit-scrollbar {
