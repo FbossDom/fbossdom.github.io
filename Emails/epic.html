@@ -5,56 +5,57 @@
     <meta http–equiv=“Content-Type” content=“text/html; charset=UTF-8” />
     <meta http–equiv=“X-UA-Compatible” content=“IE=edge” />
     <meta name=“viewport” content=“width=device-width, initial-scale=1.0 “ />
+    <meta name="color-scheme" content="dark light">
     <title>Epic Recipt</title>
     <Style>
         :root{
             color-scheme: light dark;
         }
         .background{
-            background: #ffffff;
+            background-color: #ffffff;
         }
             .differentbackground {
-            background: #f1f1f1;
+            background-color: #f1f1f1;
         }
 
         @media (prefers-color-scheme:dark) {
             .background{
-                background: #000000;
+                background-color: #000000;
             }
             .differentbackground {
-                background: #252525;
+                background-color: #252525;
             }
             [data-ogsc] .differentbackground {
-                background: #252525 !important;
+                background-color: #252525 !important;
             }
             [data-ogsb] .differentbackground {
-                background: #252525 !important;
+                background-color: #252525 !important;
             }
             [data-ogsc] .background {
-                background: #000000 !important;
+                background-color: #000000 !important;
             }
             [data-ogsb] .background {
-                background: #000000 !important;
+                background-color: #000000 !important;
             }
         }
         @media (prefers-color-scheme:light) {
             .background{
-                background: #ffffff;
+                background-color: #ffffff;
             }
             .differentbackground {
-                background: #f1f1f1;
+                background-color: #f1f1f1;
             }
             [data-ogsc] .differentbackground {
-                background: #f1f1f1 !important;
+                background-color: #f1f1f1 !important;
             }
             [data-ogsb] .differentbackground {
-                background: #f1f1f1 !important;
+                background-color: #f1f1f1 !important;
             }
             [data-ogsc] .background {
-                background: #ffffff !important;
+                background-color: #ffffff !important;
             }
             [data-ogsb] .background {
-                background: #ffffff !important;
+                background-color: #ffffff !important;
             }
         }
 
@@ -65,7 +66,8 @@
             margin: 0;
         }
         .width600{
-            width: 600px;
+            width: 100%;
+            max-width: 600px;
             margin: 0 auto;
         }
         table{
@@ -142,129 +144,152 @@
     </Style>
 </head>
 <body class="differentbackground">
-    <div class="differentbackground width600">
-        <div>
-            <img src="https://ci3.googleusercontent.com/proxy/eP4FFa-mqn0IZZSJgV9B1kEGaN-q4Na_OUBLG7ag4iLWQRamiZ84Ua3VRnZdBgTmlV2LrY1XFivTF2lwG3KQcUMZovbZ3UDUedWetGmgORBvm3A5X9uWklzvU4PVjc3iu-5Y5qoJA4t9xgRKuPeHOt9c9l6GaK8xgHlTDapJdbX8djsngrugJ1ZILklNZ0vkkg=s0-d-e1-ft#http://images.harmony.epsilon.com/ContentHandler/images/61a7fbcf-9940-4c13-ad82-1cc8d60d33bf/RTM_Images/EML_EPICGAMES_LOGO.png"
-            alt="Epic Logo">
-        </div>
-        <div class="size50 bold">
-            Thank You.
-        </div>
-    </div>
-    <div class="width600 background nopaddingbottom">
-        <div class="size18 bold nopaddingtop nopaddingbottom">
-            Hi Name!
-        </div>
-        <p class="size18 nopaddingtop">
-            Thanks for your purchase from Epic Games International S.á.r.l..
-        </p>
-        <div class="size35 bold nopaddingbottom">
-            INVOICE ID: <br>
-            K0123456789
-        </div>
-        <p class="lightgreycolor">
-            ( Please keep a copy of this receipt for your records. )
-        </p>
-        <table> 
-            <tr>
-                <th colspan="2" class="lightgreycolor alignleft borderbottom bold nopaddingbottom">YOUR ORDER INFORMATION:</th>
-            </tr>
-            <tr>
-                <td class="alignleft bold size16 nopaddingbottom">Order ID:</td>
-                <td class="alignleft bold size16 nopaddingbottom">Bill To:</td>
-            </tr>
-            <tr>
-                <td class="alignleft size16 nopaddingbottom nopaddingtop">L1234567891234</td>
-                <td class="alignleft size15 nopaddingbottom nopaddingtop"><a href="mailto:clientadress@domain.ect" class="bluetext">clientadress@domain.ect</a></td>
-            </tr>
-            <tr>
-                <td class="alignleft bold size16 nopaddingbottom">Order Date:</td>
-                <td class="alignleft bold size16 nopaddingbottom">Source:</td>
-            </tr>
-            <tr>
-                <td class="alignleft size16 nopaddingbottom nopaddingtop">January 1, 2022</td>
-                <td class="alignleft size16 nopaddingbottom nopaddingtop">Epic Games Store</td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td colspan="3" class="lightgreycolor borderbottom bold alignleft nopaddingbottom">HERE'S WHAT YOU ORDERED:</td>
-            </tr>
-            <tr>
-                <th class="differentbackground">Description:</th>
-                <th class="differentbackground">Publisher:</th>
-                <th class="differentbackground">Price:</th>
-            </tr>
-            <tr>
-                <td class="borderbottom">Game Name</td>
-                <td class="borderbottom">Studio Name</td>
-                <td class="borderbottom">EUR 0.00</td>
-            </tr>
-            <tr>
-                <td colspan="3" class="bold alignright paddingright10"><span class="lightgreycolor bold">TOTAL [EUR]:&nbsp;&nbsp;&nbsp;</span> 0.00</td>
-            </tr>
-            <tr>
-                <td colspan="3">VAT is included if applicable.</td>
-            </tr>
-            <tr>
-                <td colspan="3" class="lightgreycolor alignleft borderbottom bold nopaddingbottom">PAYMENT DETAILS:</td>
-            </tr>
-            <tr>
-                <td colspan="2" class="lightgreycolor alignleft borderbottom bold">PAID FROM:
-                    <span class="bold">[EUR]:</span></td>
-                <td class="bold borderbottom alignright paddingright10">EUR 0</td>
-            </tr>
-            <tr>
-                <td colspan="3" class="borderbottom">
-                    Unless otherwise noted by the product or offer, any game 
-                    purchased on the Epic Games Store is eligible for refund within 
-                    14 days of purchase (or for pre-purchases, within 14 days of release) 
-                    if you have played for less than 2 hours. See our 
-                    <a href="" target="_blank" class="bluetext">refund policy</a> for details.
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3" class="borderbottom">
-                    EU residents have a right at law to withdraw from a purchase of 
-                    digital content, without giving any reason, for a period of 14 days 
-                    after that purchase. <a href="" target="_blank" class="greentext">Click here to find 
-                    out more</a> .
-                    <span class="bold">
-                        However, you have expressly consented to waive your 
-                        right to withdraw from this purchase and acknowledged that by giving 
-                        this consent you will lose this right after downloading the software 
-                        and playing for 2 hours.
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                    <p class="bold">Epic Games International S.à r.l.</p>
-                    Luxembourg-Bertrange, Swiss Branch, Platz 3, 6039 Root, Switzerland <br>
-                    Swiss Tax Registration Number: CHE-358.969.724 <br>
-                    EU VAT Identification Number: EU528001425 <br>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="width600">
-        <p class="size10">
-            Need Help? <a href="help.epicgames.com" target="_blank" class="bluetext">help.epicgames.com</a>
-        </p>
-        <p class="lightgreycolor paddingright10 paddingleft10">
-            © 2022, Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo,
-            Unreal, Unreal Engine, the Unreal Engine logo, Epic Games Store, and the Epic Games
-            Store logo are trademarks or registered trademarks of Epic Games, Inc. in the USA
-            and elsewhere. All other trademarks are the property of their respective owners.
-        </p>
-        <div>
-            <a href="https://www.epicgames.com/site/en-US/tos?sessionInvalidated=true" target="_blank" class="bluetext size12">Terms of Service</a>
-            <a href="https://www.epicgames.com/site/en-US/privacypolicy" target="_blank" class="bluetext size12">Privacy Policy</a>
-        </div>
-        <p>
-            Box 254, 2474 Walnut Street, Cary, North Carolina, 27518
-        </p>
-    </div>
-    
+    <table class="width600">
+        <tr>
+            <td>
+                <div class="differentbackground">
+                    <div>
+                        <img src="https://ci3.googleusercontent.com/proxy/eP4FFa-mqn0IZZSJgV9B1kEGaN-q4Na_OUBLG7ag4iLWQRamiZ84Ua3VRnZdBgTmlV2LrY1XFivTF2lwG3KQcUMZovbZ3UDUedWetGmgORBvm3A5X9uWklzvU4PVjc3iu-5Y5qoJA4t9xgRKuPeHOt9c9l6GaK8xgHlTDapJdbX8djsngrugJ1ZILklNZ0vkkg=s0-d-e1-ft#http://images.harmony.epsilon.com/ContentHandler/images/61a7fbcf-9940-4c13-ad82-1cc8d60d33bf/RTM_Images/EML_EPICGAMES_LOGO.png"
+                        alt="Epic Logo">
+                    </div>
+                    <div class="size50 bold">
+                        Thank You.
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="background nopaddingbottom">
+                    <table class="background" style="width: 90%;">
+                        <tr>
+                            <td class="size18 bold nopaddingtop nopaddingbottom">
+                                Hi Name!
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="size18">
+                                Thanks for your purchase from Epic Games International S.á.r.l..
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="size35 bold nopaddingbottom">
+                                INVOICE ID: <br>
+                                K0123456789
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="lightgreycolor">
+                                ( Please keep a copy of this receipt for your records. )
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="background"> 
+                        <tr>
+                            <th colspan="2" class="lightgreycolor alignleft borderbottom bold nopaddingbottom">YOUR ORDER INFORMATION:</th>
+                        </tr>
+                        <tr>
+                            <td class="alignleft bold size16 nopaddingbottom">Order ID:</td>
+                            <td class="alignleft bold size16 nopaddingbottom">Bill To:</td>
+                        </tr>
+                        <tr>
+                            <td class="alignleft size16 nopaddingbottom nopaddingtop">L1234567891234</td>
+                            <td class="alignleft size15 nopaddingbottom nopaddingtop"><a href="mailto:clientadress@domain.ect" class="bluetext">clientadress@domain.ect</a></td>
+                        </tr>
+                        <tr>
+                            <td class="alignleft bold size16 nopaddingbottom">Order Date:</td>
+                            <td class="alignleft bold size16 nopaddingbottom">Source:</td>
+                        </tr>
+                        <tr>
+                            <td class="alignleft size16 nopaddingbottom nopaddingtop">January 1, 2022</td>
+                            <td class="alignleft size16 nopaddingbottom nopaddingtop">Epic Games Store</td>
+                        </tr>
+                    </table>
+                    <table class="background">
+                        <tr>
+                            <td colspan="3" class="lightgreycolor borderbottom bold alignleft nopaddingbottom">HERE'S WHAT YOU ORDERED:</td>
+                        </tr>
+                        <tr>
+                            <th class="differentbackground">Description:</th>
+                            <th class="differentbackground">Publisher:</th>
+                            <th class="differentbackground">Price:</th>
+                        </tr>
+                        <tr>
+                            <td class="borderbottom">Game Name</td>
+                            <td class="borderbottom">Studio Name</td>
+                            <td class="borderbottom">EUR 0.00</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="bold alignright paddingright10"><span class="lightgreycolor bold">TOTAL [EUR]:&nbsp;&nbsp;&nbsp;</span> 0.00</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">VAT is included if applicable.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="lightgreycolor alignleft borderbottom bold nopaddingbottom">PAYMENT DETAILS:</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="lightgreycolor alignleft borderbottom bold">PAID FROM:
+                                <span class="bold">[EUR]:</span></td>
+                            <td class="bold borderbottom alignright paddingright10">EUR 0</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="borderbottom">
+                                Unless otherwise noted by the product or offer, any game 
+                                purchased on the Epic Games Store is eligible for refund within 
+                                14 days of purchase (or for pre-purchases, within 14 days of release) 
+                                if you have played for less than 2 hours. See our 
+                                <a href="" target="_blank" class="bluetext">refund policy</a> for details.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="borderbottom">
+                                EU residents have a right at law to withdraw from a purchase of 
+                                digital content, without giving any reason, for a period of 14 days 
+                                after that purchase. <a href="" target="_blank" class="greentext">Click here to find 
+                                out more</a> .
+                                <span class="bold">
+                                    However, you have expressly consented to waive your 
+                                    right to withdraw from this purchase and acknowledged that by giving 
+                                    this consent you will lose this right after downloading the software 
+                                    and playing for 2 hours.
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <p class="bold">Epic Games International S.à r.l.</p>
+                                Luxembourg-Bertrange, Swiss Branch, Platz 3, 6039 Root, Switzerland <br>
+                                Swiss Tax Registration Number: CHE-358.969.724 <br>
+                                EU VAT Identification Number: EU528001425 <br>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <p class="size10">
+                        Need Help? <a href="help.epicgames.com" target="_blank" class="bluetext">help.epicgames.com</a>
+                    </p>
+                    <p class="lightgreycolor paddingright10 paddingleft10">
+                        © 2022, Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo,
+                        Unreal, Unreal Engine, the Unreal Engine logo, Epic Games Store, and the Epic Games
+                        Store logo are trademarks or registered trademarks of Epic Games, Inc. in the USA
+                        and elsewhere. All other trademarks are the property of their respective owners.
+                    </p>
+                    <div>
+                        <a href="https://www.epicgames.com/site/en-US/tos?sessionInvalidated=true" target="_blank" class="bluetext size12">Terms of Service</a>
+                        <a href="https://www.epicgames.com/site/en-US/privacypolicy" target="_blank" class="bluetext size12">Privacy Policy</a>
+                    </div>
+                    <p>
+                        Box 254, 2474 Walnut Street, Cary, North Carolina, 27518
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
