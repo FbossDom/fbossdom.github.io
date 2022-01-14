@@ -1,0 +1,168 @@
+$decorativecolor: lightblue;
+$background1: rgba(0,0,0, 0.1);
+$background2: rgba(0,0,0, 0.6);
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: $background2;
+    color: white;
+}
+#background{
+    background-image: url(/Pictures/field-5429112_1920.jpg);
+    background-size: cover;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    filter: blur(5px);
+}
+header{
+    background: linear-gradient(45deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%);
+    width: 100%;
+    height: 70px;
+    display: block;
+    table{
+        width: 100%;
+        height: 100%;
+        border-collapse: collapse;
+        :nth-child(1){
+            width: 50px;
+            vertical-align: top;
+        }
+        :nth-child(2){
+            width: calc(100%-150px);
+            vertical-align: middle;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+        :nth-child(3){
+            width: 100px;
+            vertical-align: middle;
+            text-align: center;
+        }
+    }
+}
+    #logocontainer{
+        width: 55px;
+        height: 55px;
+        text-decoration: none;
+        display: inline;
+    }
+        #logo{
+            height: 50px;
+            width: 50px;
+            margin:5px;
+            background-color: rgba(255,255,255,0.3);
+            border-radius: 5px;
+            padding: 3px;  
+        }
+    .time{
+        width: 100%;
+    }
+
+main{
+    text-align: center;
+}
+    .input{
+        margin-top: 100px;
+    }
+        .inputValue{
+            width: 50%;
+            max-width: 90%;
+            border-radius: 5px;
+            border: 2px solid $decorativecolor;
+            background-color: $background1;
+            padding: 10px;
+            color: white;
+            background: linear-gradient(45deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%);
+        }
+        .button{
+            margin-top: 20px;
+            border-radius: 5px;
+            border: 2px solid $decorativecolor;
+            background-color: $decorativecolor;
+            padding: 10px 20px;
+        }
+    .display{
+        background-color: $background1;
+        width: 90%;
+        margin: 20px auto;
+        height: 150px;
+        padding: 50px 0;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        border-radius: 5px;
+        background: linear-gradient(45deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%);
+    }
+        .name{
+            width: 50%;
+            text-align: center;
+            height: 100%;
+            line-height: 150px;
+            margin:0;
+        }
+        #datacontainer{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            border-left: 3px solid $decorativecolor;
+        }
+            .temperature{
+                width: 50%;
+                font-size: 100px;
+                height: 100%;
+                margin: 0;
+                display: inline-block;
+                line-height: 150px;
+            }
+            #datacontainer2{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            } 
+                #unit{
+                    width: 100%;
+                    height: 50%;
+                    margin: 0;
+                    display: inline-block;
+                    line-height: 75px;
+                    font-size: 30px;
+                }
+                .description{
+                    width: 100%;
+                    height: 50%;
+                    margin: 0;
+                    display: inline-block;
+                    line-height: 75px;
+                    font-size: 30px;
+                }
+@media screen and (max-width: 600px){
+    .display{
+        flex-direction: column;
+        height: 300px;
+    }
+    #datacontainer{
+        border:none;
+        border-top: 3px solid $decorativecolor;
+        width: 100%;
+    }
+    .name{
+        width: 100%;
+    }
+}
+    

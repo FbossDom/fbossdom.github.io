@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="background"></div>
+    <header>
+        <table>
+            <tr>
+                <td>
+                    <a href="https://fbossdom.github.io" target="_blank" id="logocontainer">
+                        <img src="https://fbossdom.github.io/Pictures/FD logo.png"
+                        alt="FD logo"
+                        id="logo">
+                    </a>
+                </td>
+                <td>
+                    Weather App
+                </td>
+                <td>
+                    <div id="time">00:00:00</div>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <main>
+        <div class="input">
+            <input type="text" class="inputValue" placeholder="Enter city name.">
+            <input type="submit" value=">" class="button">
+        </div>
+        <div class="display">
+            <h1 class="name">City</h1>
+            <div id="datacontainer">
+                <p class="temperature">0</p>
+                <div id="datacontainer2">
+                    <p id="unit">°C</p>
+                    <p class="description">State</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
