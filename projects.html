@@ -10,6 +10,7 @@
 </head>
 <main>
     <script src="Scripts/script.js"></script>
+    <script src="Scripts/projects.js"></script>
     <header>
         <div id="NavContainer">
             <a href="index.html">
@@ -46,15 +47,15 @@
     </header>
     <body id="ProjectsContainer">
         <div id="ProjectCountContainer">
-            <span>Websites: 3</span>
+            <span id="WebsitesCounter" onclick="websiteClick()">Websites: 4</span>
             <span><a href="https://github.com/FbossDom" target="blank">
                     <img src="Pictures/GitHub-Mark-64px.png" alt="Github Logo">
                   </a>
             </span>
-            <span>E-Mails: 3</span>
+            <span id="EmailsCounter" onclick="emailsClick()">e-Mails: 3</span>
         </div>
         
-        <div class="ProjectItem"> <!--New Realty Kft-->
+        <div class="ProjectItem WebsiteProjectItem"> <!--New Realty Kft-->
             <div class="TechTokenContainer">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png" alt="HTML">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/544px-CSS3_logo_and_wordmark.svg.png" alt="CSS">
@@ -68,7 +69,7 @@
             <a href="https://www.newrealtykft.hu" target="blank" class="ProjectLink">--></a>
         </div>
 
-        <div class="ProjectItem"> <!--Converter Dominium-->
+        <div class="ProjectItem WebsiteProjectItem"> <!--Converter Dominium-->
             <div class="TechTokenContainer">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png" alt="HTML">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/544px-CSS3_logo_and_wordmark.svg.png" alt="CSS">
@@ -83,7 +84,7 @@
             <a href="Converter Dominium/length.html" class="ProjectLink">--></a>
         </div>
 
-        <div class="ProjectItem"> <!--Protfolio Page-->
+        <div class="ProjectItem WebsiteProjectItem"> <!--Protfolio Page-->
             <div class="TechTokenContainer">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png" alt="HTML">
                 <img src="Pictures/Sass Logo.jpg" alt="SASS">
@@ -97,7 +98,7 @@
             <div class="ProjectTitle">Portfolio page</div>
         </div>
 
-        <div class="ProjectItem"> <!--Weather app-->
+        <div class="ProjectItem WebsiteProjectItem"> <!--Weather app-->
             <div class="TechTokenContainer">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png" alt="HTML">
                 <img src="Pictures/Sass Logo.jpg" alt="SASS">
@@ -112,7 +113,7 @@
             <a href="Weather App/index.html" class="ProjectLink">--></a>
         </div>
 
-        <div class="ProjectItem"> <!--EA PROMO EMAIl-->
+        <div class="ProjectItem EmailProjectItem"> <!--EA PROMO EMAIl-->
             <div class="TechTokenContainer">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png" alt="HTML">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/544px-CSS3_logo_and_wordmark.svg.png" alt="CSS">
@@ -126,7 +127,7 @@
             <a href="Emails/EA.html" class="ProjectLink">--></a>
         </div>
 
-        <div class="ProjectItem"> <!--GOG Newsletter-->
+        <div class="ProjectItem EmailProjectItem"> <!--GOG Newsletter-->
             <div class="TechTokenContainer">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png" alt="HTML">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/544px-CSS3_logo_and_wordmark.svg.png" alt="CSS">
@@ -140,7 +141,7 @@
             <a href="Emails/gog.html" class="ProjectLink">--></a>
         </div>
 
-        <div class="ProjectItem"> <!--Epic Recipt-->
+        <div class="ProjectItem EmailProjectItem"> <!--Epic Recipt-->
             <div class="TechTokenContainer">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png" alt="HTML">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/544px-CSS3_logo_and_wordmark.svg.png" alt="CSS">
