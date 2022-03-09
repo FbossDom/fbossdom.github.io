@@ -64,7 +64,7 @@ function getResult(){
     result.innerHTML = eval(equation.innerHTML).toString();
 }
 
-function clear(){
+function resetCalculator(){
     textInput = "";
     lastInputSign = false;
     result.innerHTML = "";
@@ -85,7 +85,7 @@ function keyPress(key){
     console.log(key.key);
     input(key.key);
     if(key.key == "Enter")getResult();
-    if(key.key == "Escape")clear();
+    if(key.key == "Escape")resetCalculator();
     if(key.key == "Backspace")deleteLast();
 }
 
