@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://fbossdom.github.io/Pictures/FD%20logo.png">
+    <title>DF | Calculator</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        button{
+            max-width: 3em !important;
+            margin: 5px;
+        }
+        p{
+            max-width: 95% !important;
+        }
+        .container{
+            width: 50%;
+            max-width: 95%;
+        }
+        header{
+            width: 100%;
+            text-align: center;
+        }
+        img{
+            width: 50px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body onload="start()">
+    <script src="calculator.js"></script>
+    <header>
+        <a href="https://fbossdom.github.io/" target="_blank">
+            <img src="https://fbossdom.github.io/Pictures/FD%20logo.png" alt="FD logo">
+        </a>
+    </header>
+    <main  class="bg-dark">
+        <div class="container" style="padding: 10px 0 10px;">
+            <div class="row">
+                <p id="result" style="min-height: 30px;" class="bg-secondary rounded"></p>
+                <p id="equation" style="min-height: 30px;" class="bg-secondary rounded"></p>        
+            </div>
+            <div class="row">
+                <button onclick="input('7')" class="btn btn-secondary col border border-dark">
+                    7</button>
+                <button onclick="input('8')" class="btn btn-secondary col border border-dark">
+                    8</button>
+                <button onclick="input('9')" class="btn btn-secondary col border border-dark">
+                    9</button>
+                <button onclick="input('+')" class="btn btn-light col border border-dark">
+                    +</button>    
+                <button onclick="clear()" class="btn btn-danger col border border-dark">
+                    CE</button>    
+            </div>
+            <div class="row">
+                <button onclick="input('4')" class="btn btn-secondary col border border-dark">
+                    4</button>
+                <button onclick="input('5')" class="btn btn-secondary col border border-dark">
+                    5</button>
+                <button onclick="input('6')" class="btn btn-secondary col border border-dark">
+                    6</button>
+                <button onclick="input('-')" class="btn btn-light col border border-dark">
+                    -</button>    
+            </div>
+            <div class="row">
+                <button onclick="input('1')" class="btn btn-secondary col border border-dark">
+                    1</button>
+                <button onclick="input('2')" class="btn btn-secondary col border border-dark">
+                    2</button>
+                <button onclick="input('3')" class="btn btn-secondary col border border-dark">
+                    3</button>
+                <button onclick="input('*')" class="btn btn-light col border border-dark">
+                    *</button>    
+            </div>
+            <div class="row">
+                <button onclick="input('0')" class="btn btn-secondary col border border-dark">
+                    0</button>
+                <button onclick="input('.')" class="btn btn-secondary col border border-dark">
+                    .</button>
+                <button onclick="input('/')" class="btn btn-light col border border-dark">
+                    /</button>
+                <button onclick="getResult()" class="btn btn-danger col border border-dark">
+                    =</button>    
+            </div>
+        </div>
+    </main>
+</body>
+</html>
