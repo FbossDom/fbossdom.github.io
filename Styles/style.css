@@ -288,6 +288,7 @@ header img {
   padding: 5px 10px;
   margin: 0 5px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 #ProjectCountContainer :nth-child(1) {
@@ -487,6 +488,17 @@ header img {
 
 #AboutMain :nth-child(1) p {
   width: 80%;
+  padding: 0;
+}
+
+#AboutMain :nth-child(1) li {
+  padding: 0;
+}
+
+#AboutMain :nth-child(1) h3 {
+  width: 100%;
+  text-align: center;
+  padding: 0;
 }
 
 #AboutMain :nth-child(2) {
@@ -499,6 +511,16 @@ header img {
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 15px;
+}
+
+#AboutMain :nth-child(2) h3 {
+  padding: 0;
+}
+
+#AboutMain :nth-child(2) ul {
+  width: auto;
+  text-align: left;
+  padding: 0;
 }
 
 #AboutMain :nth-child(2) li {

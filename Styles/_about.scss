@@ -13,6 +13,7 @@
 
         p{
             width: 80%;
+            padding: 0;
         }
         text-align: left;
         font-family: monospace;
@@ -21,6 +22,14 @@
         padding: 10px;
         border-radius: 10px;
         margin-bottom: 15px;
+        li{
+            padding: 0;
+        }
+        h3{
+            width: 100%;
+            text-align: center;
+            padding:0;
+        }
     }
     :nth-child(2){
 
@@ -31,6 +40,14 @@
         padding: 10px;
         border-radius: 10px;
         margin-bottom: 15px;
+        h3{
+            padding: 0;
+        }
+        ul{
+            width: auto;
+            text-align: left;
+            padding: 0;
+        }
         li{
             margin: 0;
             padding:0;
