@@ -21,11 +21,10 @@ setInterval( function(){
     }
     var timetext = hours + ":" + minutes + ":" + seconds;
     timeelement.innerText = timetext.replace(/\r?\n|\r/g, "");
-    console.log(hours + ":" + minutes + ":" + seconds);
+    //console.log(hours + ":" + minutes + ":" + seconds);
 }, 1000);
 
 button.addEventListener('click', function(){
-    console.log(inputValue.value);
     fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+
     '&units='+unitsystem+'&appid=0ee3cad4c759de5ab5444aaee73a95f3')
     .then(response => response.json())
