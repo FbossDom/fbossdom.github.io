@@ -19,5 +19,8 @@ At first i wasn't sure i was up for it, but at the end both me and the client wa
 I created this simple javascript calculator myself, no tutorials or copying of any kind. Its simple for now, i intend to add some more features in the future.
 I also used Bootstrap to style it, just to try that out aswell.
 
+- Weather App - <br>
+I made this little site where you can search a town and will recieve data about the current weather, using the openweathermap api.
+
 - HTML eMail projects -
 I recreated some html emails from my inbox, it was quite a challange considering the nature of html emails and the compatibility mess, but i think i succeded, some of them actually worked better in outlook PC than the original emails did.
